@@ -1,5 +1,9 @@
 using Microsoft.EntityFrameworkCore;
 using TesteDesenvolvimento.Data.Context;
+using TesteDesenvolvimento.Data.Repository;
+using TesteDesenvolvimento.Data.Repository.Interface;
+using TesteDesenvolvimento.Service.Service;
+using TesteDesenvolvimento.Service.Service.Interface;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -11,6 +15,9 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
 builder.Services.AddDbContext<DbContexto>(options => options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
+
+builder.Services.AddScoped<IAltitudeRepository, AltitudeRepository>();
+builder.Services.AddScoped<IAltitudeService, AltitudeService>();
 
 var app = builder.Build();
 
