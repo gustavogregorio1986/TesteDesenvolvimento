@@ -12,5 +12,7 @@ namespace TesteDesenvolvimento.Service.Service.Interface
         Task AdicionarAsync(Altitude altitude);
 
         Task<List<Altitude>> ListarAsync();
+
+        void ValidarAltitude(Altitude altitude);
     }
 }
