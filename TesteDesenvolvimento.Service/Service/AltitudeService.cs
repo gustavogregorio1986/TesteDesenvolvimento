@@ -20,6 +20,20 @@ namespace TesteDesenvolvimento.Service.Service
 
         public async Task AdicionarAsync(Altitude altitude)
         {
+            // Verifica valor inválido
+            if (altitude.Longitude < -90)
+                throw new InvalidOperationException("A altitude não pode ser negativa.");
+
+            if (altitude.Longitude > 90)
+                throw new InvalidOperationException("A altitude ultrapassa o limite permitido.");
+
+            // Verifica valor inválido
+            if (altitude.Latitude < -180)
+                throw new InvalidOperationException("A altitude não pode ser negativa.");
+
+            if (altitude.Latitude > 180)
+                throw new InvalidOperationException("A altitude ultrapassa o limite permitido.");
+
             await _altitudeRepository.AdicionarAsync(altitude);
         }
 
