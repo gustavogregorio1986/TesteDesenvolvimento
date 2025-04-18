@@ -21,7 +21,7 @@ namespace TesteDesenvolvimento.Data.Repository
 
         public async Task AdicionarAsync(Altitude altitude)
         {
-            _db.Altitudes.Add(altitude);
+            _db.Add(altitude);
             await _db.SaveChangesAsync();
         }
 

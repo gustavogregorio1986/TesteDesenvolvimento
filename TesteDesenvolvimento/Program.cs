@@ -1,4 +1,5 @@
 using Microsoft.EntityFrameworkCore;
+using TesteDesenvolvimento.Data.AutoMapper;
 using TesteDesenvolvimento.Data.Context;
 using TesteDesenvolvimento.Data.Repository;
 using TesteDesenvolvimento.Data.Repository.Interface;
@@ -18,6 +19,8 @@ builder.Services.AddDbContext<DbContexto>(options => options.UseSqlServer(builde
 
 builder.Services.AddScoped<IAltitudeRepository, AltitudeRepository>();
 builder.Services.AddScoped<IAltitudeService, AltitudeService>();
+
+builder.Services.AddAutoMapper(typeof(AutoMapperProfile));
 
 var app = builder.Build();
 

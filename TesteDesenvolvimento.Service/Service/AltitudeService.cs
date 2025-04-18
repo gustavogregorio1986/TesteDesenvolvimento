@@ -13,6 +13,11 @@ namespace TesteDesenvolvimento.Service.Service
     {
         private readonly IAltitudeRepository _altitudeRepository;
 
+        public AltitudeService(IAltitudeRepository altitudeRepository)
+        {
+            _altitudeRepository = altitudeRepository;
+        }
+
         public async Task AdicionarAsync(Altitude altitude)
         {
             await _altitudeRepository.AdicionarAsync(altitude);
