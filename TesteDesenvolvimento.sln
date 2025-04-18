@@ -11,13 +11,17 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Dominio", "Dominio", "{16E0
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Service", "Service", "{CB05EB2D-6B12-46B1-B881-1F889B0D0157}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TesteDesenvolvimento", "TesteDesenvolvimento\TesteDesenvolvimento.csproj", "{08AE4268-EE92-4475-B7D0-F405D0122735}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TesteDesenvolvimento", "TesteDesenvolvimento\TesteDesenvolvimento.csproj", "{08AE4268-EE92-4475-B7D0-F405D0122735}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TesteDesenvolvimento.Data", "TesteDesenvolvimento.Data\TesteDesenvolvimento.Data.csproj", "{91140137-CA47-49E2-B4A8-D42F7682EF98}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TesteDesenvolvimento.Data", "TesteDesenvolvimento.Data\TesteDesenvolvimento.Data.csproj", "{91140137-CA47-49E2-B4A8-D42F7682EF98}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TesteDesenvolvimento.Dominio", "TesteDesenvolvimento.Dominio\TesteDesenvolvimento.Dominio.csproj", "{B944D3B8-BB57-47B8-99A7-B598E850AA3F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TesteDesenvolvimento.Dominio", "TesteDesenvolvimento.Dominio\TesteDesenvolvimento.Dominio.csproj", "{B944D3B8-BB57-47B8-99A7-B598E850AA3F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TesteDesenvolvimento.Service", "TesteDesenvolvimento.Service\TesteDesenvolvimento.Service.csproj", "{BDD71629-1008-4937-B14A-0B94090983E2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TesteDesenvolvimento.Service", "TesteDesenvolvimento.Service\TesteDesenvolvimento.Service.csproj", "{BDD71629-1008-4937-B14A-0B94090983E2}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "TestesUnitarios", "TestesUnitarios", "{1C323632-56FF-41F8-92A8-27FED7943D5B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AltitudeApp", "AltitudeApp\AltitudeApp.csproj", "{08500A06-5DC6-4C1C-AA2B-7DC01CBFC2EA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -41,6 +45,10 @@ Global
 		{BDD71629-1008-4937-B14A-0B94090983E2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BDD71629-1008-4937-B14A-0B94090983E2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BDD71629-1008-4937-B14A-0B94090983E2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{08500A06-5DC6-4C1C-AA2B-7DC01CBFC2EA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{08500A06-5DC6-4C1C-AA2B-7DC01CBFC2EA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{08500A06-5DC6-4C1C-AA2B-7DC01CBFC2EA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{08500A06-5DC6-4C1C-AA2B-7DC01CBFC2EA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -50,6 +58,7 @@ Global
 		{91140137-CA47-49E2-B4A8-D42F7682EF98} = {F33EFC6F-0066-4B90-B72D-1D4A3F0DA0B2}
 		{B944D3B8-BB57-47B8-99A7-B598E850AA3F} = {16E01EA2-37D8-4742-8ED7-C709208EE054}
 		{BDD71629-1008-4937-B14A-0B94090983E2} = {CB05EB2D-6B12-46B1-B881-1F889B0D0157}
+		{08500A06-5DC6-4C1C-AA2B-7DC01CBFC2EA} = {1C323632-56FF-41F8-92A8-27FED7943D5B}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {0D66264E-D657-4949-BEE9-DF6601C20290}
